@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Get the current date and time:</p>
+<p id="demo"></p>
+<script>
+const currentDate = new Date();
+const year = (currentDate.getFullYear() ).toString().padStart(4, '0');
+const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+const day = currentDate.getDate().toString().padStart(2, '0');
+const md= year+ month+day;
+document.getElementById("demo").innerHTML = md;
+</script>
+</body>
+</html>
